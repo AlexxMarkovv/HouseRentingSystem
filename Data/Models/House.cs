@@ -52,5 +52,7 @@ namespace HouseRentingSystem.Data.Models
         [ForeignKey(nameof(AgentId))]
         public Agent Agent { get; set; } = null!;
 
+        [Comment("User id of the renterer")]
+        public string? RenterId { get; set; }
     }
 }
